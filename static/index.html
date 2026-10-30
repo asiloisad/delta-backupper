@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Delta Backupper</title>
+  <meta name="theme-color" content="#245743">
+  <link rel="icon" type="image/svg+xml" href="assets/branding/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="themes.css">
+</head>
+<body>
+  <a id="skip-content" class="skip-link" href="#page-content">Skip to page content</a>
+  <header id="titlebar" class="titlebar" aria-label="Window title bar">
+    <div class="titlebar-content">
+    <div class="titlebar-title"><button id="about" class="titlebar-about" type="button" aria-label="About Delta Backupper" title="About"><span class="brand-logo titlebar-logo" aria-hidden="true"><img src="assets/branding/logo.svg" class="brand-logo-color" alt="" width="20" height="20"><img src="assets/branding/logo-light.svg" class="brand-logo-light" alt="" width="20" height="20"></span></button><span id="window-title">Delta Backupper</span></div>
+    <div class="titlebar-actions">
+      <button id="home" class="titlebar-home" type="button" aria-current="page" title="Home" aria-label="Home"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m2.5 9 7.5-6 7.5 6M4.5 7.5v9h4v-5h3v5h4v-9"/></svg></button>
+      <button id="refresh" class="titlebar-refresh" type="button" title="Refresh" aria-label="Refresh tasks"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 7a6.5 6.5 0 1 0 .2 5M16 3v4h-4"/></svg></button>
+    </div>
+    </div>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Backup tasks">
+      <div class="sidebar-actions"><button id="new-task" class="primary">New task</button><button id="discover-task">Discover existing</button></div>
+      <div class="sidebar-label"><span>TASKS</span></div>
+      <nav id="task-list" aria-label="Task list"></nav>
+      <div class="sidebar-footer"><button id="defaults">Task defaults</button><button id="app-settings">Application settings</button></div>
+    </aside>
+    <main id="main" tabindex="-1" aria-label="Task details"></main>
+  </div>
+  <div id="notification" role="status" aria-live="polite" hidden></div>
+  <dialog id="dialog"><div id="dialog-body"></div></dialog>
+  <script src="index.js"></script>
+</body>
+</html>

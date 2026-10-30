@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "product": "Delta Backupper",
+  "generator": "node script/generate-branding.mjs",
+  "renderer": "Electron 45.1.0 / Chromium canvas",
+  "palette": {
+    "forest": "#245743",
+    "deep": "#173B2F",
+    "mint": "#91D2B2",
+    "ivory": "#F5F8F4",
+    "amber": "#D5A84D"
+  },
+  "fonts": "System Segoe UI/Arial in installer and wordmark graphics; logo and application icons contain no text or fonts.",
+  "assets": [
+    {
+      "name": "app-1024.png",
+      "sha256": "c881591f7206ef63331d8664a122dee689a7d9c7e2e16a36344706808edbffa4"
+    },
+    {
+      "name": "app-128.png",
+      "sha256": "31bf828fc68766cce688c52249671b030ac9ccc8e80b0a35832897fa2380796b"
+    },
+    {
+      "name": "app-16.png",
+      "sha256": "2711460d40aec86bf2e1dbf779fba8ae79eed4fa0c323b25ef7c198a02036129"
+    },
+    {
+      "name": "app-20.png",
+      "sha256": "f6dcb718ccdc7744312652cc51951c85ce98b2dbf0b39d97d49ee6266a49e08c"
+    },
+    {
+      "name": "app-24.png",
+      "sha256": "ee3db1e60fba8a59cd66b626829003c924104df83ddb0aed4f936845b639d801"
+    },
+    {
+      "name": "app-256.png",
+      "sha256": "ff0a96fb7ba0755676714bbc8aa4601ca9365aa9c92aefd67c6c2d5358336c71"
+    },
+    {
+      "name": "app-32.png",
+      "sha256": "f523834b07107012ea417721763ff91d2914d4c1d377d23c8ea503b49a1725dc"
+    },
+    {
+      "name": "app-48.png",
+      "sha256": "1f8e0961819574a920708be85f8c1ae9002ab7b01143254e5ac2c36863879179"
+    },
+    {
+      "name": "app-512.png",
+      "sha256": "b638d2cceeeae29458ad41feb1bc60b6286f440b2688f61c09dec491f749ac74"
+    },
+    {
+      "name": "app-64.png",
+      "sha256": "04d1d5cba6f469182df04703d4e2effde543e6e761f02f5a6e537688d2b4c6a7"
+    },
+    {
+      "name": "app-icon.png",
+      "sha256": "b638d2cceeeae29458ad41feb1bc60b6286f440b2688f61c09dec491f749ac74"
+    },
+    {
+      "name": "app-icon.svg",
+      "sha256": "04802df03d55036d4b4b8240a71b43d2e4168e7cdf3366826ee3b3d209defcb7"
+    },
+    {
+      "name": "app.icns",
+      "sha256": "cd03b0f0ef502e72208e9fcbbd45ef3725f2f54db1229cd9659f9a08dec7387c"
+    },
+    {
+      "name": "app.ico",
+      "sha256": "db1c3e75e8bf4df2daff8517697c9f1443b296a8dc5821867f0ac4b46244b748"
+    },
+    {
+      "name": "dmg-background.png",
+      "sha256": "22416fec1ba9603d19e2a87b7672ffc5fd52b9795531bcf52b0c661b31937e89"
+    },
+    {
+      "name": "dmg-background.svg",
+      "sha256": "f72b20bb62f43477caa7a1425930ad1bff95de9fefc4e961e963ca5f9ea427b6"
+    },
+    {
+      "name": "installer-header.bmp",
+      "sha256": "d41cd7001367e13ab23344b31bcaa411ce823f81bbabbf3116fc5de281d3c2c3"
+    },
+    {
+      "name": "installer-header.png",
+      "sha256": "1c178c0b222d8722be326a01e01d09f7b2b468a86df6f24b9182285003d72836"
+    },
+    {
+      "name": "installer-header.svg",
+      "sha256": "194435b9d0f47117f4a9175ab1bd6296a7a840ef9de5def8c37c60a2c7042b12"
+    },
+    {
+      "name": "installer-sidebar.bmp",
+      "sha256": "f1661beaad89c95688778bfde57c488c9b6b7e60788d2b722551083becb93f73"
+    },
+    {
+      "name": "installer-sidebar.png",
+      "sha256": "3ed0043e845d6600e7261f9c061dbb0991ba012aba573463a57d20cf19bc9e2c"
+    },
+    {
+      "name": "installer-sidebar.svg",
+      "sha256": "fb47ddc7d4fc87b02db896401e625578f685906e691e6ae97df193ca3b44252a"
+    },
+    {
+      "name": "logo-light.png",
+      "sha256": "33a0cd772fc0e18dd3b42900dfc9b8f2b9c31b14b233e9ea23d2ca807a409a1c"
+    },
+    {
+      "name": "logo-light.svg",
+      "sha256": "e40c9b3168eca585c59371aa5393c1cb46e7addb54e5e8ce29fc98bc8155d8ed"
+    },
+    {
+      "name": "logo.png",
+      "sha256": "e68e7ad2940cdc192b43eb80b3cc897d5b459604d5c28c7420e69e20d47013c6"
+    },
+    {
+      "name": "logo.svg",
+      "sha256": "0dfb462e61728b648522438ef2508c5f1e69045efaf0714952133536134241e4"
+    },
+    {
+      "name": "tray-16.png",
+      "sha256": "b9d2d02d591df917c4ae696793923886590c67e35fb3a432dc988b2f006267eb"
+    },
+    {
+      "name": "tray-20.png",
+      "sha256": "e69c910a1da78e13503aea3aa966420eb40806dd55ad888306240f6aa9956b24"
+    },
+    {
+      "name": "tray-24.png",
+      "sha256": "e0dea91c650dc29e543231612d2c2ecc1b0a26f3531c39baa9e614b43b847445"
+    },
+    {
+      "name": "tray-32.png",
+      "sha256": "37644f39452791d82941e96a40ad38d765de532a6da61f29c03c7735b38d851e"
+    },
+    {
+      "name": "tray-36.png",
+      "sha256": "e8a545f53d1bf62a289f1851aa7e2efd8115ae8386bcd53d0ede24e15c27200b"
+    },
+    {
+      "name": "tray-40.png",
+      "sha256": "18653eed2a5b6867176d3f49375aa2ab804cfaf0c8ddc0275600b674cb373e95"
+    },
+    {
+      "name": "tray-48.png",
+      "sha256": "31614862a081cbd7e00d17209e3eec7f1c62f70c5d77c239d5f6247060a85cd8"
+    },
+    {
+      "name": "tray-64.png",
+      "sha256": "87a1385009e2901450062d7a61d32f84850e92bd9dc5378e13d13f2c8081a6ef"
+    },
+    {
+      "name": "tray-template-16.png",
+      "sha256": "45915270155209a3fd36c7e61c8bd132a82f7179389c65babb964244d439c2ea"
+    },
+    {
+      "name": "tray-template-20.png",
+      "sha256": "867dff51c0325f29695b6c811f19d0c75fd341fd924a7fcccb26e881c90ab28c"
+    },
+    {
+      "name": "tray-template-24.png",
+      "sha256": "d36d3e61486f7083620880a1487295fce892dad88d27189873d951d345e4ecd8"
+    },
+    {
+      "name": "tray-template-32.png",
+      "sha256": "b632d20e85c8669694fd304becef267a5c3c58d8b0e26cfbf0b94151bfdf2c7b"
+    },
+    {
+      "name": "tray-template-36.png",
+      "sha256": "c552cd0bdd65d475b6c01d630ca2a38df8879695c9c3c77f5d0b03f6bd4afd5a"
+    },
+    {
+      "name": "tray-template-40.png",
+      "sha256": "5756c551d91704edbf798d70ac8fe22017bf002d4f6abd61f7edfd0493f16110"
+    },
+    {
+      "name": "tray-template-48.png",
+      "sha256": "a12ea258bd19eed8800a2d9e9328ec85a2fae30176a41b9c18e95b404a7e7487"
+    },
+    {
+      "name": "tray-template-64.png",
+      "sha256": "c39a2c00c043543a0d6369897a28959db4877152e3b19579b6c940c208040bcf"
+    },
+    {
+      "name": "tray-template.svg",
+      "sha256": "455be366adebcab95149fa93c23b69f91ccbef93301756701b25bff458811547"
+    },
+    {
+      "name": "tray.svg",
+      "sha256": "24bf8a39a3b192379f1c27ee1362ed337eb41ef796c298178fad4cb89caeb781"
+    },
+    {
+      "name": "wordmark.png",
+      "sha256": "fb7e6230d1fc44347909d7fff27035ec0ab71a69d7c5fed0fcaef449e24ec30d"
+    },
+    {
+      "name": "wordmark.svg",
+      "sha256": "7b81f7960df768309845d29de437473505bff2878304b875fbf086ae384f845a"
+    }
+  ]
+}

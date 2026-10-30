@@ -1,0 +1,16 @@
+:root { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 13px; color: var(--text); background: var(--panel); }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { color: var(--text); background: var(--panel); user-select: none; cursor: default; }
+.tray-menu { min-height: 120px; max-height: 100vh; overflow-y: auto; overflow-x: hidden; padding: 5px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel); scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track); }
+.tray-menu-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 32px; padding: 7px 10px; border: 0; border-radius: var(--control-radius); font: inherit; color: var(--text); background: transparent; text-align: left; line-height: 18px; cursor: default; }
+.tray-menu-item:hover { color: var(--selected-text); background: var(--selected-bg); }
+.tray-menu-item:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; color: var(--selected-text); background: var(--selected-bg); }
+.tray-menu-item:disabled { opacity: .5; }
+.tray-item-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tray-item-status { flex: 0 0 auto; color: var(--muted); font-size: 11px; }
+.tray-menu-item:hover .tray-item-status, .tray-menu-item:focus-visible .tray-item-status { color: var(--selected-muted); }
+.tray-cancel-item { color: var(--muted); font-size: 12px; padding-left: 20px; }
+.tray-separator { height: 1px; margin: 4px 5px; background: var(--line); }
+.tray-menu-error { margin: 4px 10px 7px; color: var(--error); font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }

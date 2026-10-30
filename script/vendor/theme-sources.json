@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "adaptedOn": "2026-10-29",
+  "components": [
+    {
+      "name": "one-theme",
+      "source": "https://github.com/lumine-code/one-theme",
+      "revision": "543b6786cc6eed20334c381eb322fc06e00a67b0",
+      "workingTree": "clean at adaptation",
+      "files": [
+        {
+          "path": "styles/day-ui/variables.css",
+          "sha256": "26548d57806aa1c7f8343d1fa344cb9454318c0adb2894952eff64a290c1ef87"
+        },
+        {
+          "path": "styles/night-ui/variables.css",
+          "sha256": "ccc5855b962c7937291d65582d8f2c02b67fee945acce970297b4e97933a5686"
+        },
+        {
+          "path": "styles/ui/main.css",
+          "sha256": "c9cb9502778da5c7c4a87fdaf2c73ab3582c285105126c6b04bfb1c0dfe3a689"
+        },
+        {
+          "path": "styles/one-ui/config.css",
+          "sha256": "5cfeb04f8d269b8a69c21abb1b5e1b8fe3a8c129cfc69cdb12291a5f3b4f848b"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "f6ffcfa654fa30637793cce4ba03004eba82a8add5dfe7da85c34407898a62c2"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES",
+          "sha256": "11cf623bdd3f88ba7a672df4adcf6f30287020b69fde13fbce37e3706242deb3"
+        }
+      ]
+    },
+    {
+      "name": "aura-theme",
+      "source": "https://github.com/lumine-code/aura-theme",
+      "revision": "671ffae0c476262a863e654a17934bc828543961",
+      "workingTree": "clean at adaptation",
+      "files": [
+        {
+          "path": "styles/day-ui/variables.css",
+          "sha256": "f8eb02d79c9b6cc5c6d96ee71c0db2f140324fd0ef294d7e14f93333db4ab350"
+        },
+        {
+          "path": "styles/night-ui/variables.css",
+          "sha256": "754d4d0721739ef3b26757a221ba06892ddeacdf8489d44fa8712cd1df5031af"
+        },
+        {
+          "path": "styles/ui-overrides/overrides.css",
+          "sha256": "877faa0cdb7f2b3cdb46c8cfb2b9ca7ba30cfd8c80f8439e9fde643259b8d388"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "f6ffcfa654fa30637793cce4ba03004eba82a8add5dfe7da85c34407898a62c2"
+        }
+      ]
+    }
+  ]
+}

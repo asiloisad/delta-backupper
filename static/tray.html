@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Delta Backupper menu</title>
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="tray.css">
+</head>
+<body>
+  <main id="tray-root" class="tray-menu" role="menu" aria-label="Delta Backupper">
+    <button id="tray-open" class="tray-menu-item" type="button" role="menuitem">Open Delta Backupper</button>
+    <div class="tray-separator" role="separator"></div>
+    <div id="tray-active" role="group" aria-label="Active operations" hidden></div>
+    <div id="tray-active-separator" class="tray-separator" role="separator" hidden></div>
+    <p id="tray-error" class="tray-menu-error" role="alert" hidden></p>
+    <button id="tray-scheduler" class="tray-menu-item" type="button" role="menuitem" disabled>Pause schedules</button>
+    <button id="tray-quit" class="tray-menu-item" type="button" role="menuitem">Quit</button>
+  </main>
+  <script src="tray.js"></script>
+</body>
+</html>

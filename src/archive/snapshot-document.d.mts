@@ -1,0 +1,5 @@
+export type SnapshotHeader = Record<string, unknown>;
+export type SnapshotMaps = { data: AsyncIterable<[string, string | null]> | Iterable<[string, string | null]>; lock: AsyncIterable<[string, string | null]> | Iterable<[string, string | null]>; errs: AsyncIterable<[string, string]> | Iterable<[string, string]>; };
+export interface SnapshotReadOptions { signal?: AbortSignal; waitIfPaused?: () => void | Promise<void>; onData?: (path: string, value: string | null) => void | Promise<void>; onStored?: (path: string, value: string | null) => void | Promise<void>; onLocked?: (path: string, value: string | null) => void | Promise<void>; onError?: (path: string, sourcePath: string) => void | Promise<void>; }
+export function writeSnapshotDocument<H extends object>(filename: string, header: H, maps: SnapshotMaps, options?: { signal?: AbortSignal; waitIfPaused?: () => void | Promise<void> }): Promise<void>;
+export function readSnapshotDocument<H extends object = SnapshotHeader>(filename: string, options?: SnapshotReadOptions): Promise<H>;

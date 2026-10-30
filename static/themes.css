@@ -1,0 +1,129 @@
+/*
+ * Delta's One and Aura palettes are adapted from Lumine's one-theme and
+ * aura-theme day-ui/night-ui variables.css and Aura's UI overrides.
+ * Original palette roles remain available below; see THIRD_PARTY_NOTICES.
+ * Semantic colors strengthen small-text contrast where an editor's subdued
+ * labels and filled buttons would be too faint in this application's forms.
+ * Keep selectors low-specificity so ~/.delta/styles.css can override them.
+ */
+:where(:root) {
+  color-scheme: light dark;
+  --text-color: light-dark(hsl(230, 1%, 26%), hsl(220, 13%, 66%));
+  --text-color-subtle: light-dark(hsl(230, 1%, 56%), hsla(220, 13%, 66%, .6));
+  --text-color-highlight: light-dark(hsl(230, 1%, 14%), hsl(220, 13%, 86%));
+  --text-color-selected: light-dark(hsl(230, 1%, 2%), #fff);
+  --text-color-info: light-dark(hsl(208, 100%, 54%), hsl(219, 79%, 66%));
+  --text-color-success: light-dark(hsl(132, 60%, 44%), hsl(140, 44%, 62%));
+  --text-color-warning: light-dark(hsl(37, 90%, 44%), hsl(36, 60%, 72%));
+  --text-color-error: light-dark(hsl(0, 90%, 56%), hsl(9, 100%, 64%));
+  --background-color-highlight: light-dark(hsl(230, 1%, 90%), hsl(220, 13%, 22%));
+  --background-color-selected: light-dark(hsl(230, 1%, 86%), hsl(220, 13%, 26%));
+  --app-background-color: light-dark(hsl(230, 1%, 92%), hsl(220, 13%, 15%));
+  --base-background-color: light-dark(hsl(230, 1%, 98%), hsl(220, 13%, 18%));
+  --base-border-color: light-dark(hsl(230, 1%, 86%), hsl(220, 13%, 10.8%));
+  --input-background-color: light-dark(#fff, hsl(220, 13%, 12%));
+  --input-background-color-focus: light-dark(hsl(230, 100%, 96%), hsl(220, 13%, 12%));
+  --input-selection-color: light-dark(#e2e6fc, hsl(220, 13%, 26%));
+  --input-selection-color-focus: light-dark(#cbd2f9, hsl(220, 13%, 32%));
+  --inset-panel-background-color: light-dark(#fff, hsl(220, 13%, 22%));
+  --overlay-background-color: light-dark(#f2f2f2, #252830);
+  --button-background-color: light-dark(#fff, hsl(220, 13%, 24%));
+  --button-background-color-hover: light-dark(hsl(0, 0%, 96%), hsl(220, 13%, 26%));
+  --scrollbar-color: light-dark(hsl(230, 1%, 78%), hsl(220, 13%, 34%));
+  --accent-indicator-color: light-dark(#556de8, #568af2);
+  --accent-background-color: light-dark(#5871ef, #4d78cc);
+  --accent-foreground-color: #fff;
+  --accent-link-color: light-dark(#304ee2, #759ef2);
+  --badge-background-color: light-dark(hsl(230, 1%, 86%), hsl(220, 13%, 28%));
+  --overlay-backdrop-color: light-dark(hsl(230, .4%, 78.4%), hsl(220, 13%, 3.6%));
+  --ui-border-radius: 3px;
+
+  --bg: var(--base-background-color);
+  --panel: var(--inset-panel-background-color);
+  --sidebar: var(--app-background-color);
+  --line: var(--base-border-color);
+  --text: var(--text-color);
+  --heading: var(--text-color-highlight);
+  --muted: light-dark(hsl(230, 1%, 40%), hsl(220, 13%, 64%));
+  --accent: light-dark(var(--accent-link-color), #81a7f5);
+  --accent-soft: color-mix(in srgb, var(--accent-background-color) 10%, var(--panel));
+  --notice-text: var(--text-color-highlight);
+  --focus: var(--accent-indicator-color);
+  --focus-ring: color-mix(in srgb, var(--focus) 24%, transparent);
+  --button-bg: var(--button-background-color);
+  --button-hover: var(--button-background-color-hover);
+  --button-text: var(--text-color-highlight);
+  --primary-bg: light-dark(#445bd6, #3864bb);
+  --primary-hover: color-mix(in srgb, var(--primary-bg) 90%, #000);
+  --primary-text: var(--accent-foreground-color);
+  --input-bg: var(--input-background-color);
+  --input-focus-bg: var(--input-background-color-focus);
+  --input-line: color-mix(in srgb, var(--text) 26%, var(--input-bg));
+  --selection-bg: var(--input-selection-color-focus);
+  --selection-text: var(--text-color-selected);
+  --selected-bg: var(--background-color-selected);
+  --selected-text: var(--text-color-selected);
+  --selected-muted: light-dark(hsl(230, 1%, 36%), hsl(220, 13%, 74%));
+  --error: light-dark(hsl(0, 72%, 39%), hsl(9, 100%, 75%));
+  --warning: light-dark(hsl(37, 80%, 29%), var(--text-color-warning));
+  --info: light-dark(hsl(208, 90%, 32%), hsl(219, 79%, 75%));
+  --success: light-dark(hsl(140, 56%, 29%), var(--text-color-success));
+  --error-soft: color-mix(in srgb, var(--error) 10%, var(--panel));
+  --warning-soft: color-mix(in srgb, var(--warning) 10%, var(--panel));
+  --info-soft: color-mix(in srgb, var(--info) 10%, var(--panel));
+  --success-soft: color-mix(in srgb, var(--success) 10%, var(--panel));
+  --control-radius: var(--ui-border-radius);
+  --panel-radius: var(--ui-border-radius);
+  --dialog-radius: calc(var(--ui-border-radius) * 2);
+  --overlay-bg: var(--overlay-background-color);
+  --backdrop: light-dark(hsl(230, .4%, 78.4%, .66), hsl(220, 13%, 3.6%, .75));
+  --selected-shadow: none;
+  --dialog-shadow: 0 12px 50px light-dark(rgb(0 0 0 / 16%), rgb(0 0 0 / 40%));
+  --notification-bg: var(--overlay-bg);
+  --notification-text: var(--text);
+  --notification-shadow: 0 4px 18px light-dark(rgb(0 0 0 / 15%), rgb(0 0 0 / 35%));
+  --error-notification-bg: #ad2925;
+  --error-notification-text: #fff;
+  --scrollbar-thumb: var(--scrollbar-color);
+  --scrollbar-track: transparent;
+  --window-close-bg: #c42b3c;
+  --window-close-text: #fff;
+  --mac-control-border: rgb(0 0 0 / 13%);
+  --mac-close-bg: #ff6059;
+  --mac-close-text: #5c1f1b;
+  --mac-minimize-bg: #ffbd2e;
+  --mac-minimize-text: #72500c;
+  --mac-maximize-bg: #28c840;
+  --mac-maximize-text: #0f5c1c;
+}
+
+:where(:root:has(body[data-theme-family="aura"])) {
+  --background-color-highlight: light-dark(hsl(0, 0%, 92.9%), hsl(228, 20%, 14%));
+  --background-color-selected: light-dark(hsl(0, 0%, 88.9%), hsl(228, 20%, 18%));
+  --app-background-color: light-dark(#f2f2f2, hsl(228, 22%, 6%));
+  --base-background-color: light-dark(#fff, hsl(228, 20%, 10%));
+  --base-border-color: light-dark(hsl(228, 12%, 88%), hsl(228, 22%, 4%));
+  --input-background-color: light-dark(#fff, hsl(228, 18%, 14%));
+  --input-background-color-focus: color-mix(in srgb, var(--accent-background-color) 10%, var(--input-background-color));
+  --input-selection-color: color-mix(in srgb, var(--accent-indicator-color) 25%, var(--input-background-color));
+  --input-selection-color-focus: color-mix(in srgb, var(--accent-indicator-color) 50%, var(--input-background-color));
+  --inset-panel-background-color: light-dark(hsl(228, 24%, 96%), hsl(228, 18%, 14%));
+  --overlay-background-color: light-dark(#fff, hsl(228, 19%, 11%));
+  --button-background-color: light-dark(#fff, hsl(228, 17%, 17%));
+  --button-background-color-hover: light-dark(hsl(228, 20%, 96%), hsl(228, 16%, 21%));
+  --scrollbar-color: light-dark(hsla(228, 10%, 38%, .18), hsla(228, 18%, 72%, .2));
+  --accent-indicator-color: #5a8ae9;
+  --accent-background-color: #5a8ae9;
+  --accent-link-color: light-dark(#356fdc, #7aa4f3);
+  --badge-background-color: light-dark(hsl(228, 16%, 90%), hsl(228, 15%, 23%));
+  --overlay-backdrop-color: light-dark(hsl(0, 0%, 48%), hsl(0, 0%, 12%));
+  --ui-border-radius: 6px;
+  --accent: light-dark(#2b60c8, var(--accent-link-color));
+  --primary-bg: #396bd0;
+  --backdrop: light-dark(rgb(122 122 122 / 14%), rgb(31 31 31 / 30%));
+  --dialog-shadow: 0 6px 24px rgb(0 0 0 / 14%), 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+/* Explicit appearance also controls the viewport and native form widgets. */
+:where(body[data-theme="light"], :root:has(body[data-theme="light"])) { color-scheme: light; }
+:where(body[data-theme="dark"], :root:has(body[data-theme="dark"])) { color-scheme: dark; }

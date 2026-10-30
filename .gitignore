@@ -1,0 +1,14 @@
+node_modules/
+.dev/
+dist/
+binaries/
+.env
+.env.*
+!.env.example
+/.delta.json
+/*.zip
+/*.zip.part
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
